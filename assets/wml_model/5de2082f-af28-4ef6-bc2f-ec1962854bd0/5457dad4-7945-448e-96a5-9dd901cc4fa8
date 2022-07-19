@@ -1,0 +1,61 @@
+{
+  "doc_type": "pipeline",
+  "pipelines": [{
+    "id": "5b3fde1f-44a0-40c2-bf04-d191fd3e633a",
+    "nodes": [{
+      "id": "automl",
+      "op": "wml-http-score",
+      "outputs": [{
+        "id": "automl"
+      }],
+      "parameters": {
+        "output_logs": true,
+        "input_file_separator": ",",
+        "stage_flag": true,
+        "optimization": {
+          "compute_pipeline_notebooks_flag": true,
+          "cv_num_folds": 3.0,
+          "daub_adaptive_subsampling_max_mem_usage": 9.0E+9,
+          "daub_include_only_estimators": ["RandomForestClassifierEstimator", "LogisticRegressionEstimator", "ExtraTreesClassifierEstimator", "XGBClassifierEstimator", "LGBMClassifierEstimator", "GradientBoostingClassifierEstimator"],
+          "holdout_param": 0.1,
+          "label": "satisfaction",
+          "learning_type": "classification",
+          "max_num_daub_ensembles": 3.0,
+          "positive_label": 1.0,
+          "retrain_on_holdout": false,
+          "run_cognito_flag": true,
+          "scorer_for_ranking": "roc_auc",
+          "text_processing_flag": false,
+          "train_sample_columns_index_list": [2.0, 4.0, 5.0, 6.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 19.0, 22.0, 23.0, 24.0]
+        },
+        "n_parallel_data_connections": 4.0,
+        "one_vs_all_file": true,
+        "output_model": {
+          "location": "/projects/1bdf6a0d-6d94-4df4-8ef4-0f39b726584a/assets/auto_ml/82fdf6cf-628f-41b0-b703-1ab2fd5651bd/wml_data/91ee3fd2-a85e-4845-8748-31b8d43b338a/data/automl/hpo_c_output/Pipeline1/model.pickle",
+          "name": "automl"
+        }
+      },
+      "runtime_ref": "autoai",
+      "type": "execution_node"
+    }],
+    "runtime_ref": "hybrid"
+  }],
+  "primary_pipeline": "5b3fde1f-44a0-40c2-bf04-d191fd3e633a",
+  "runtimes": [{
+    "app_data": {
+      "wml_data": {
+        "hardware_spec": {
+          "id": "c076e82c-b2a7-4d20-9c0f-1f0c2fdf5a24",
+          "name": "M"
+        },
+        "software_spec": {
+          "name": "autoai-kb_rt22.1-py3.9"
+        }
+      }
+    },
+    "id": "autoai",
+    "name": "auto_ai.kb",
+    "version": "sha256:c1819c3a2d1f603c7d2cf3aa9d58b0d0d910c3d029feca1cf6a81c8d8c53b998"
+  }],
+  "version": "2.0"
+}

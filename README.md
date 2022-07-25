@@ -20,9 +20,9 @@ For Model Assembly and Testing I utilized:
 - Scikit Learn (Version 0.23.2; Documentation - https://scikit-learn.org/stable/whats_new/v0.23.html) 
 
 ## Environment and Other Utilities
-As an apprentice for IBM, I wanted to gain more experience working in our cloud platform - Cloud Pak for Data. The version of Cloud Pak for Data (CPD) that I used was CPD 4.0. I used CPD's Watson Studio to house the data assets and the Jupyter Notebooks in which I conducted my exploratory data analysis and modelling.
+As an apprentice for IBM, I wanted to gain more experience working in our cloud platform - [Cloud Pak for Data](https://www.ibm.com/products/cloud-pak-for-data?utm_content=SRCWW&p1=Search&p4=43700064659101157&p5=p&gclid=Cj0KCQjw_viWBhD8ARIsAH1mCd5GrPEqDW2wW9DETy_0TwncOBXuE1IwLUNjMZkLLuUpfqLiGwbUvFQaArJlEALw_wcB&gclsrc=aw.ds). The version of Cloud Pak for Data (CPD) that I used was CPD 4.0. I used CPD's Watson Studio to house the data assets and the Jupyter Notebooks in which I conducted my exploratory data analysis and modelling.
 
-To compare and validate my intuitions and model results, I also ran the data through Auto AI. Auto AI is a subset of IBM's Auto ML - which automates the machine learning process - including modeling, feature engineering, and pipeline comparison and selection. 
+To compare and validate my intuitions and model results, I also ran the data through [Auto AI](https://www.ibm.com/cloud/watson-studio/autoai). Auto AI is a subset of IBM's Auto ML - which automates the machine learning process - including modeling, feature engineering, and pipeline comparison and selection. 
 
 ## File Descriptions
 As far as the contents of this notebook - I used two data assets:
